@@ -66,6 +66,16 @@ Sites expire after 3 hours unless claimed. The response includes a `claim_token`
 (e.g. `joe.unu.lu`). See the [full documentation](https://unulu.ai/llms-full.txt)
 for the complete claim flow and all input options.
 
+## Examples
+
+The [`examples/`](examples/) folder contains runnable shell scripts:
+
+| Script | Description |
+|--------|-------------|
+| [`create-site.sh`](examples/create-site.sh) | Create a site and print the live URL + claim info |
+| [`get-state.sh`](examples/get-state.sh) | Fetch the current state of a site by ID |
+| [`create-with-theme.sh`](examples/create-with-theme.sh) | Create a site with a specific theme and rich links (icons, subtitles, badges) |
+
 ## Tools
 
 | Tool | Description |
@@ -77,6 +87,7 @@ for the complete claim flow and all input options.
 
 - **Update support** — PATCH endpoint for editing name, bio, links, and theme after creation
 - **Idempotency keys** — safe retries for create requests
+- **Typed client** — `@unulu/client` npm package with full TypeScript types
 
 ## Links
 
