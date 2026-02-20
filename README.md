@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="https://unulu.ai/unulu-logo-F.svg" alt="unulu" width="140" />
+</p>
+
 # unulu
 
 > AI agent website builder — create and publish link-in-bio sites via MCP server or REST API.
@@ -37,6 +41,7 @@ curl -X POST https://api.unulu.ai/api/sites \
   -d '{
     "name": "Acme Corp",
     "bio": "We build things.",
+    "skin_id": "midnight-gradient",
     "links": [
       { "title": "Documentation", "url": "https://docs.example.com" },
       { "title": "Blog", "url": "https://blog.example.com" }
@@ -49,16 +54,18 @@ Response:
 ```json
 {
   "site_id": "abc123",
-  "url": "https://unu.lu/abc123",
+  "url": "https://a7x2k.unu.lu",
   "expires_at": "2025-01-04T12:00:00Z"
 }
 ```
+
+Sites expire after 3 hours unless claimed. See the [full documentation](https://unulu.ai/llms-full.txt) for all input options including `skin_id`, `subtitle`, `leading_icon`, and `trailing_badge`.
 
 ## Tools
 
 | Tool | Description |
 |------|-------------|
-| `unulu_create_site` | Create a link-in-bio site with a name, bio, and links. Returns a live URL on unu.lu. |
+| `unulu_create_site` | Create a link-in-bio site with a name, bio, links, and optional theme skin. Returns a live URL on unu.lu. 17 skins available. |
 | `unulu_get_state` | Get the current state of a site created via `unulu_create_site`. |
 
 ## Links
