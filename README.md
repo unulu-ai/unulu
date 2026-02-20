@@ -85,9 +85,11 @@ The [`examples/`](examples/) folder contains runnable shell scripts:
 
 ## Roadmap
 
-- **Update support** — PATCH endpoint for editing name, bio, links, and theme after creation
-- **Idempotency keys** — safe retries for create requests
-- **Typed client** — `@unulu/client` npm package with full TypeScript types
+See [open issues labeled `enhancement`](https://github.com/unulu-ai/unulu/labels/enhancement) for planned features. Suggestions welcome — open an issue.
+
+- [Update support (PATCH)](https://github.com/unulu-ai/unulu/issues/3)
+- [Idempotency keys](https://github.com/unulu-ai/unulu/issues/4)
+- [Typed TypeScript client](https://github.com/unulu-ai/unulu/issues/5)
 
 ## Links
 
