@@ -12,7 +12,7 @@
 
 unulu lets AI agents create live link-in-bio websites in seconds. Connect via the MCP server (for Claude Desktop, Cursor, and other MCP clients) or call the REST API directly.
 
-Sites are published instantly at `unu.lu/<id>` with 17 built-in theme skins.
+Sites are published instantly at `<id>.unu.lu` with 17 built-in theme skins.
 
 ## Quick start — MCP
 
@@ -55,11 +55,26 @@ Response:
 {
   "site_id": "abc123",
   "url": "https://a7x2k.unu.lu",
+  "claim_token": "ck_a1b2c3d4",
+  "claim_url": "https://a7x2k.unu.lu/__claim",
   "expires_at": "2025-01-04T12:00:00Z"
 }
 ```
 
-Sites expire after 3 hours unless claimed. See the [full documentation](https://unulu.ai/llms-full.txt) for all input options including `skin_id`, `subtitle`, `leading_icon`, and `trailing_badge`.
+Sites expire after 3 hours unless claimed. The response includes a `claim_token` and
+`claim_url` — share these with the user so they can pick a permanent handle
+(e.g. `joe.unu.lu`). See the [full documentation](https://unulu.ai/llms-full.txt)
+for the complete claim flow and all input options.
+
+## Examples
+
+The [`examples/`](examples/) folder contains runnable shell scripts:
+
+| Script | Description |
+|--------|-------------|
+| [`create-site.sh`](examples/create-site.sh) | Create a site and print the live URL + claim info |
+| [`get-state.sh`](examples/get-state.sh) | Fetch the current state of a site by ID |
+| [`create-with-theme.sh`](examples/create-with-theme.sh) | Create a site with a specific theme and rich links (icons, subtitles, badges) |
 
 ## Tools
 
@@ -68,10 +83,16 @@ Sites expire after 3 hours unless claimed. See the [full documentation](https://
 | `unulu_create_site` | Create a link-in-bio site with a name, bio, links, and optional theme skin. Returns a live URL on unu.lu. 17 skins available. |
 | `unulu_get_state` | Get the current state of a site created via `unulu_create_site`. |
 
+## Roadmap
+
+- **Update support** — PATCH endpoint for editing name, bio, links, and theme after creation
+- **Idempotency keys** — safe retries for create requests
+- **Typed client** — `@unulu/client` npm package with full TypeScript types
+
 ## Links
 
 - [Landing page](https://unulu.ai)
-- [OpenAPI spec](https://unulu.ai/openapi.yaml)
+- [OpenAPI spec](https://unulu.ai/openapi.json)
 - [llms.txt](https://unulu.ai/llms.txt)
 - [MCP server.json](https://unulu.ai/.well-known/mcp/server.json)
 - [Acceptable use](https://unulu.ai/acceptable-use)
