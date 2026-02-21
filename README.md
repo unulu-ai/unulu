@@ -55,16 +55,17 @@ Response:
 {
   "site_id": "abc123",
   "url": "https://a7x2k.unu.lu",
+  "assistant_message": "Your site is live: https://a7x2k.unu.lu\n\nTo keep it permanently, tap \"Claim this site\": https://a7x2k.unu.lu/__claim\n...",
   "claim_token": "ck_a1b2c3d4",
   "claim_url": "https://a7x2k.unu.lu/__claim",
   "expires_at": "2026-02-21T15:00:00Z"
 }
 ```
 
-Sites expire after 3 hours unless claimed. The response includes a `claim_token` and
-`claim_url` — share these with the user so they can pick a permanent handle
-(e.g. `joe.unu.lu`). See the [full documentation](https://unulu.ai/llms-full.txt)
-for the complete claim flow and all input options.
+Sites expire after 3 hours unless claimed. The response includes an `assistant_message`
+with claim instructions — share it with the user as-is so they can pick a permanent
+handle (e.g. `joe.unu.lu`). See the [full documentation](https://unulu.ai/llms-full.txt)
+for all input options.
 
 ## Examples
 
