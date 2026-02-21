@@ -22,8 +22,6 @@ url=$(echo "$response" | jq -r '.url')
 echo ""
 echo "Site is live at: $url"
 
-# Show claim info
-claim_url=$(echo "$response" | jq -r '.claim_url')
-claim_token=$(echo "$response" | jq -r '.claim_token')
-echo "To claim a permanent handle, visit: $claim_url"
-echo "Claim code: $claim_token"
+# Show claim instructions (pre-formatted by the API)
+echo ""
+echo "$(echo "$response" | jq -r '.assistant_message')"
