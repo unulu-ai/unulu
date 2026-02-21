@@ -57,7 +57,7 @@ Response:
   "url": "https://a7x2k.unu.lu",
   "claim_token": "ck_a1b2c3d4",
   "claim_url": "https://a7x2k.unu.lu/__claim",
-  "expires_at": "2025-01-04T12:00:00Z"
+  "expires_at": "2026-02-21T15:00:00.000Z"
 }
 ```
 
@@ -82,6 +82,7 @@ The [`examples/`](examples/) folder contains runnable shell scripts:
 |------|-------------|
 | `unulu_create_site` | Create a link-in-bio site with a name, bio, links, and optional theme skin. Returns a live URL on unu.lu. 17 skins available. |
 | `unulu_get_state` | Get the current state of a site created via `unulu_create_site`. |
+| `unulu_check_handle` | Check if a handle (e.g. "joe" for joe.unu.lu) is available for claiming. |
 
 ## Roadmap
 
