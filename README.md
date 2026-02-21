@@ -57,7 +57,7 @@ Response:
   "url": "https://a7x2k.unu.lu",
   "claim_token": "ck_a1b2c3d4",
   "claim_url": "https://a7x2k.unu.lu/__claim",
-  "expires_at": "2026-02-21T15:00:00.000Z"
+  "expires_at": "2026-02-21T15:00:00Z"
 }
 ```
 
