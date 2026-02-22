@@ -55,16 +55,14 @@ Response:
 {
   "site_id": "abc123",
   "url": "https://a7x2k.unu.lu",
-  "assistant_message": "Your site is live: https://a7x2k.unu.lu\n\nTo keep it permanently, tap \"Claim this site\": https://a7x2k.unu.lu/__claim\n...",
-  "claim_token": "ck_a1b2c3d4",
-  "claim_url": "https://a7x2k.unu.lu/__claim",
+  "assistant_message": "Your site is live: https://a7x2k.unu.lu\n\nTo keep it permanently, visit your site and tap \"Make this yours\".",
   "expires_at": "2026-02-21T15:00:00Z"
 }
 ```
 
 Sites expire after 3 hours unless claimed. The response includes an `assistant_message`
 with claim instructions — share it with the user as-is so they can pick a permanent
-handle (e.g. `joe.unu.lu`). See the [full documentation](https://unulu.ai/llms-full.txt)
+handle (e.g. `joe.unu.lu`). See the [full documentation](https://unulu.ai/llms.txt)
 for all input options.
 
 ## Examples
@@ -84,12 +82,12 @@ The [`examples/`](examples/) folder contains runnable shell scripts:
 | `unulu_create_site` | Create a link-in-bio site with a name, bio, links, and optional theme skin. Returns a live URL on unu.lu. 17 skins available. |
 | `unulu_get_state` | Get the current state of a site created via `unulu_create_site`. |
 | `unulu_check_handle` | Check if a handle (e.g. "joe" for joe.unu.lu) is available for claiming. |
+| `unulu_update_site` | Update an existing site's name, bio, links, or theme. All fields optional — only provided fields change. |
 
 ## Roadmap
 
 See [open issues labeled `enhancement`](https://github.com/unulu-ai/unulu/labels/enhancement) for planned features. Suggestions welcome — open an issue.
 
-- [Update support (PATCH)](https://github.com/unulu-ai/unulu/issues/3)
 - [Idempotency keys](https://github.com/unulu-ai/unulu/issues/4)
 - [Typed TypeScript client](https://github.com/unulu-ai/unulu/issues/5)
 
