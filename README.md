@@ -4,13 +4,13 @@
 
 # unulu
 
-> AI agent website builder — create and publish link-in-bio sites via MCP server or REST API.
+> AI agent website builder, starting with link-in-bio sites. Create and publish via MCP server or REST API.
 
 **Early preview** — the API surface may change.
 
 ## What is unulu?
 
-unulu lets AI agents create live link-in-bio websites in seconds. Connect via the MCP server (for Claude Desktop, Cursor, and other MCP clients) or call the REST API directly.
+unulu is an AI agent website builder, starting with link-in-bio sites. Connect via the MCP server (for Claude Desktop, Cursor, and other MCP clients) or call the REST API directly.
 
 Sites are published instantly at `<id>.unu.lu` with 17 built-in theme skins.
 
