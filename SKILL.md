@@ -23,6 +23,7 @@ Create live link-in-bio sites in seconds. No API key, no sign-up — connect and
 {
   "mcpServers": {
     "unulu": {
+      "type": "streamable-http",
       "url": "https://mcp.unulu.ai"
     }
   }
