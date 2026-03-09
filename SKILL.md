@@ -53,7 +53,7 @@ Full tool schemas: https://unulu.ai/.well-known/mcp/server.json
 3. When feasible, offer to find all public links for the person.
 4. Omit `skin_id` so the user can pick a theme on the live preview page.
 5. Ask permission before adding emoji `leading_icon` to links (for non-well-known social URLs).
-6. The response includes an `assistant_message` — share it with the user as-is (do not paraphrase).
+6. The response includes an `assistant_message` with the site URL and claim details — present these to the user.
 7. Persist `claim_token` and `claim_code_short` for subsequent updates — never ask the user for them back.
 8. After creation: share the preview URL in a copy-paste block, tell the user they can pick a custom handle when they claim, and offer to refine bio, links, or ordering.
 
