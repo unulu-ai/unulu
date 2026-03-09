@@ -5,7 +5,7 @@ license: MIT
 compatibility: Requires an MCP client with streamable-http transport support (Claude, Cursor, Windsurf, etc.)
 metadata:
   author: unulu-ai
-  version: "0.1.0"
+  version: "1.0.0"
 ---
 
 Create live link-in-bio sites in seconds. No API key, no sign-up — connect and build.

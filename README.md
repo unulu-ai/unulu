@@ -6,7 +6,7 @@
 
 > AI agent website builder, starting with link-in-bio sites. Create and publish via MCP server or REST API.
 
-**Early preview** — the API surface may change.
+**v1.0** — Stable API.
 
 ## What is unulu?
 
