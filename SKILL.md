@@ -71,7 +71,7 @@ Full tool schemas: https://unulu.ai/.well-known/mcp/server.json
 
 ## Edge cases
 
-- Sites are ephemeral (~3 hours) until claimed by the owner.
+- Sites are ephemeral (~1 hour) until claimed by the owner.
 - Claimed sites are permanent — `expires_at` is absent in `unulu_get_state` response.
 - Use `claim_token` for ephemeral sites, `edit_token` for claimed sites.
 - Well-known social links (GitHub, X, LinkedIn, etc.) display branded icons automatically — omit `leading_icon` for these.

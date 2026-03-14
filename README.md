@@ -8,6 +8,7 @@
 
 **v1.0** — Stable API.
 
+
 ## What is unulu?
 
 unulu is a website builder designed for AI agents. You describe a site in conversation with an AI assistant — Claude, ChatGPT, Gemini, Cursor, or any MCP-compatible tool — and it builds and publishes the site instantly.
@@ -22,7 +23,7 @@ Starting with **link-in-bio sites**: a single page with your name, bio, and link
 - **Check handle availability** before claiming
 - **17 built-in themes** including minimal, gradient, brutalist, glass, and more
 
-Sites are published instantly and expire after 3 hours unless claimed with an email address.
+Sites are published instantly and expire after 1 hour unless claimed with an email address.
 
 ## Quick start (MCP)
 
