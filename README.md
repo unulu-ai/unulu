@@ -4,6 +4,8 @@
 
 # unulu
 
+[![MCP Badge](https://lobehub.com/badge/mcp/unulu-ai-unulu)](https://lobehub.com/mcp/unulu-ai-unulu)
+
 > AI agent website builder, starting with link-in-bio sites. Create and publish via MCP server or REST API.
 
 **v1.0** — Stable API.
